@@ -54,7 +54,10 @@
     margin-left: -9px;
 }
 .profile .profile_in .profile_img p span {color: #A6A2AB;}
-.profile .profile_in .profile_txt .about {display: flex;}
+.profile .profile_in .profile_txt {
+    position: absolute;
+    top: 267px; left: 666px;
+}
 .profile .profile_in .profile_txt h3 {
     font-family: "Jomolhari", serif;
     font-size: 1.13rem;
@@ -68,6 +71,7 @@
     letter-spacing: -2%;
 }
 .profile .profile_in .profile_txt .sub_tit {display: flex;}
+.profile .profile_in .profile_txt .about {display: flex;}
 .profile .profile_in .profile_txt .about .about_left .name p {margin-left: 22px; letter-spacing: -2%;}
 .profile .profile_in .profile_txt .about .about_left .phone {margin-top: 20px;}
 .profile .profile_in .profile_txt .about .about_left .phone p {margin-left: 18px;}
@@ -89,4 +93,3 @@
 .profile .profile_in .profile_txt .skill .skicon_bottom {display: flex;}
 .profile .profile_in .profile_txt .skill .skicon_bottom li {margin-right: 10px;}
 .profile .profile_in .profile_txt .skill .skicon_bottom li:last-child {margin-right: 0;}
-
