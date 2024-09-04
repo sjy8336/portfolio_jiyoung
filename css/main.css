@@ -79,4 +79,14 @@
 #profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -2%;}
 #profile .profile_in .profile_txt .edu .grad {margin: 20px 0;}
 #profile .profile_in .profile_txt .edu .council {margin-bottom: 20px;}
-#profile .profile_in .profile_txt .license {}
+#profile .profile_in .profile_txt .license {margin-top: 50px;}
+#profile .profile_in .profile_txt .license p {margin-left: 20px; letter-spacing: -2%;}
+#profile .profile_in .profile_txt .license .car {margin-top: 20px;}
+#profile .profile_in .profile_txt .skill {margin-top: 50px;}
+#profile .profile_in .profile_txt .skill .skicon_top {display: flex; margin-bottom: 10px;}
+#profile .profile_in .profile_txt .skill .skicon_top li {margin-right: 10px;}
+#profile .profile_in .profile_txt .skill .skicon_top li:last-child {margin-right: 0;}
+#profile .profile_in .profile_txt .skill .skicon_bottom {display: flex;}
+#profile .profile_in .profile_txt .skill .skicon_bottom li {margin-right: 10px;}
+#profile .profile_in .profile_txt .skill .skicon_bottom li:last-child {margin-right: 0;}
+
