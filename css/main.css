@@ -103,7 +103,7 @@
     color: #7F7C82;
     padding-top: 70px;
 }
-.project01 .pj01_in .web_s .web {margin-left: 129px;}
+.project01 .pj01_in .web_s .web {margin: 50px 0 0 129px;}
 .project01 .pj01_in .web_s .web>div {display: flex;}
 .project01 .pj01_in .web_s .web>div .web_img {
     width: 720px; height: 752px;
@@ -162,10 +162,31 @@
     color: #7F7C82;
     padding-top: 70px;
 }
-.project02 .pj02_in .app {}
-.project02 .pj02_in .app .app_img {}
+.project02 .pj02_in .app {display: flex; margin: 113px 0 0 221px;}
+.project02 .pj02_in .app .app_img {
+    width: 586px; height: 565px;
+    background-color: #7F7C82;
+}
 .project02 .pj02_in .app .app_img img {}
-.project02 .pj02_in .app .app_txt {}
-.project02 .pj02_in .app .app_txt .text {}
-.project02 .pj02_in .app .app_txt .text h3 {}
-.project02 .pj02_in .app .app_txt .text p {}
+.project02 .pj02_in .app .app_txt {margin-left: 115px;}
+.project02 .pj02_in .app .app_txt .text {display: flex; margin-bottom: 25px;}
+.project02 .pj02_in .app .app_txt .text h3 {
+    letter-spacing: -1px;
+    color: #605C64;
+    font-weight: 600;
+}
+.project02 .pj02_in .app .app_txt .text p {letter-spacing: -1px;}
+.project02 .pj02_in .app .app_txt .name p {margin-left: 54px;}
+.project02 .pj02_in .app .app_txt .date p {margin-left: 40px;}
+.project02 .pj02_in .app .app_txt .part p {margin-left: 54px;}
+.project02 .pj02_in .app .app_txt .page p {margin-left: 27px;}
+.project02 .pj02_in .app .app_txt .program p {margin-left: 10px;}
+.project02 .pj02_in .app .app_txt .purpose h3 {
+    letter-spacing: -1px;
+    color: #605C64;
+    font-weight: 600;
+}
+.project02 .pj02_in .app .app_txt .purpose p {margin-top: 20px; line-height: 140%;}
+.project02 .pj02_in .app .app_txt .btn {}
+.project02 .pj02_in .app .app_txt .btn li {}
+.project02 .pj02_in .app .app_txt .btn li a{}
