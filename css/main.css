@@ -6,7 +6,7 @@
 #intro .intro_in .tab li a {
     font-family: "Jomolhari", serif;
     color: #7F7C82;
-    letter-spacing: -2%;
+    letter-spacing: -2px;
 }
 #intro .intro_in p {
     font-family: "Jomolhari", serif;
@@ -48,7 +48,7 @@
 }
 .profile .profile_in .profile_img p {
     font-family: "Jomolhari", serif;
-    letter-spacing: -2%;
+    letter-spacing: -2px;
     font-size: 1.13rem;
     margin-top: 20px;
     margin-left: -9px;
@@ -68,11 +68,10 @@
 .profile .profile_in .profile_txt h4 {
     font-family: "Jomolhari", serif;
     font-weight: 600;
-    letter-spacing: -2%;
 }
 .profile .profile_in .profile_txt .sub_tit {display: flex;}
 .profile .profile_in .profile_txt .about {display: flex;}
-.profile .profile_in .profile_txt .about .about_left .name p {margin-left: 22px; letter-spacing: -2%;}
+.profile .profile_in .profile_txt .about .about_left .name p {margin-left: 22px; letter-spacing: -2px;}
 .profile .profile_in .profile_txt .about .about_left .phone {margin-top: 20px;}
 .profile .profile_in .profile_txt .about .about_left .phone p {margin-left: 18px;}
 .profile .profile_in .profile_txt .about .about_right {margin-left: 65px;}
@@ -80,11 +79,11 @@
 .profile .profile_in .profile_txt .about .about_right .email {margin-top: 20px;}
 .profile .profile_in .profile_txt .about .about_right .email p {margin-left: 20px;}
 .profile .profile_in .profile_txt .edu {margin-top: 50px;}
-.profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -2%;}
+.profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -2px;}
 .profile .profile_in .profile_txt .edu .grad {margin: 20px 0;}
 .profile .profile_in .profile_txt .edu .council {margin-bottom: 20px;}
 .profile .profile_in .profile_txt .license {margin-top: 50px;}
-.profile .profile_in .profile_txt .license p {margin-left: 20px; letter-spacing: -2%;}
+.profile .profile_in .profile_txt .license p {margin-left: 20px; letter-spacing: -2px;}
 .profile .profile_in .profile_txt .license .car {margin-top: 20px;}
 .profile .profile_in .profile_txt .skill {margin-top: 50px;}
 .profile .profile_in .profile_txt .skill .skicon_top {display: flex; margin-bottom: 10px;}
