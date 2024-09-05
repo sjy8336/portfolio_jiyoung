@@ -154,3 +154,18 @@
     color: #fff;
     font-weight: 300;
 }
+.project02 {}
+.project02 h2 {
+    font-family: "Jomolhari", serif;
+    font-size: 4.00rem;
+    font-weight: 600;
+    color: #7F7C82;
+    padding-top: 70px;
+}
+.project02 .app {}
+.project02 .app .app_img {}
+.project02 .app .app_img img {}
+.project02 .app .app_txt {}
+.project02 .app .app_txt .text {}
+.project02 .app .app_txt .text h3 {}
+.project02 .app .app_txt .text p {}
