@@ -10,27 +10,31 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.28/fullpage.min.js" integrity="sha512-X0OyMwqsleyiPQgdq3FZzQihWPJ3bf5VrMk9Z8Fi34TUbdzHHOfwu9QoC0Y/yUiMxwpFD6eMHUJcMK8FwvgTtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <div>
-        <div id="intro" class="box">
+    <swiper-container class="mySwiper" slides-per-view="3" centered-slides="true" space-between="30" pagination="true"
+    pagination-type="fraction" navigation="true">
+    <div id="wrap" class="swiper main">
+        <div class="swiper-wrapper">
+            <div id="intro" class="swiper-slide box">
         <div class="intro_in">
-            <ul class="tab">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">App Design</a></li>
-                <li><a href="#">Sns Design</a></li>
-                <li><a href="#">Detail Design</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="menu">
+                <ul class="tab">
+                    <li class="profile"><a href="#">Profile</a></li>
+                    <li class="webD"><a href="#">Web Design</a></li>
+                    <li class="appD"><a href="#">App Design</a></li>
+                    <li class="snsD"><a href="#">Sns Design</a></li>
+                    <li class="detailD"><a href="#">Detail Design</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <P class="year">2024</P>
             <h1>PORTFOLIO</h1>
             <P class="job">Web Designer & Web Publisher</P>
         </div>
-        </div>
-        <div class="profile box">
+            </div>
+            <div id="profile" class="swiper-slide box">
         <div class="profile_in">
             <h2>PROFILE</h2>
             <div class="profile_img">
@@ -112,8 +116,8 @@
                 </div>
             </div>
         </div>
-        </div>
-        <div class="project01 box">
+            </div>
+            <div id="project01" class="swiper-slide box">
         <div class="pj01_in">
             <h2>WEB DESIGN</h2>
             <div class="swiper web_s">
@@ -287,8 +291,8 @@
                 <div class="swiper-button-next"></div>
             </div>
         </div>
-        </div>
-        <div class="project02 box">
+            </div>
+            <div id="project02" class="swiper-slide box">
         <div class="pj02_in">
             <h2>APP DESIGN</h2>
             <div class="app">
@@ -333,21 +337,23 @@
                 </div>
             </div>
         </div>
-        </div>
-        <div class="project03 box">
+            </div>
+            <div id="project03" class="swiper-slide box">
         <div class="pj03_in">
             <h2>SNS DESIGN</h2>
-            <ul class="sns">
-                <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
-                <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
-                <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
-                <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
-                <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
-                <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
-            </ul>
+            <div class="snsS">
+                <ul class="sns">
+                    <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
+                    <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
+                    <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
+                    <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
+                    <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
+                    <li><div><img src="#" alt="puma sns 광고디자인"></div></li>
+                </ul>
+            </div>
         </div>
-        </div>
-        <div class="project04 box">
+            </div>
+            <div id="project04" class="swiper-slide box">
         <div class="pj04_in">
             <h2>DETAIL PAGE DESIGN</h2>
             <ul class="detail">
@@ -357,8 +363,8 @@
                 <li><div><img src="#" alt="mac 상세페이지 디자인"></div></li>
             </ul>
         </div>
-        </div>
-        <div class="contact box">
+            </div>
+            <div id="contact" class="swiper-slide box">
             <h2>CONTACT</h2>
             <div class="ct_in">
                 <div class="kakao"><img src="./img/kakao_icon.png"    alt="카카오톡 큐알이미지"></div>
@@ -372,6 +378,7 @@
                         <p>sjy8336@gmail.com</p>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

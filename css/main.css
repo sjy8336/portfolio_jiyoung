@@ -1,9 +1,11 @@
-.box {width: 100%; height: 100vh; background-color: #F3F1F5;} /* 배경색 */
+.main {height: 100vh;}
+.box {width: 100%; height: 960px; background-color: #F3F1F5;} /* 배경색 */
 #intro .intro_in {width: 1600px; margin: 0 auto;}
-#intro .intro_in .tab {display: flex; justify-content: right; padding-top: 70px;}
-#intro .intro_in .tab li {margin-left: 30px;}
-#intro .intro_in .tab li:first-child {margin-left: 0;}
-#intro .intro_in .tab li a {
+#intro .intro_in .menu {display: fixed;}
+#intro .intro_in .menu .tab {display: flex; justify-content: right; padding-top: 70px;}
+#intro .intro_in .menu .tab li {margin-left: 30px;}
+#intro .intro_in .menu .tab li:first-child {margin-left: 0;}
+#intro .intro_in .menu .tab li a {
     font-family: "Jomolhari", serif;
     color: #7F7C82;
     letter-spacing: 0px;
@@ -29,116 +31,115 @@
     margin-top: 20px;
     font-size: 2.00rem;
 }
-.profile .profile_in {width: 1600px; height: 100%; margin: 0 auto; position: relative;}
-.profile .profile_in h2 {
+#profile .profile_in {width: 1600px; height: 100%; margin: 0 auto; position: relative;}
+#profile .profile_in h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 70px;
 }
-.profile .profile_in .profile_img {
+#profile .profile_in .profile_img {
     position: absolute;
     top: 267px; left: 240px;
-
 }
-.profile .profile_in .profile_img .photo {
+#profile .profile_in .profile_img .photo {
     width: 356px; height: 436px;
     background-color: lightgray;
 }
-.profile .profile_in .profile_img p {
+#profile .profile_in .profile_img p {
     font-family: "Jomolhari", serif;
     letter-spacing: -1px;
     font-size: 1.13rem;
     margin-top: 20px;
     margin-left: -9px;
 }
-.profile .profile_in .profile_img p span {color: #A6A2AB;}
-.profile .profile_in .profile_txt {
+#profile .profile_in .profile_img p span {color: #A6A2AB;}
+#profile .profile_in .profile_txt {
     position: absolute;
     top: 267px; left: 666px;
 }
-.profile .profile_in .profile_txt h3 {
+#profile .profile_in .profile_txt h3 {
     font-family: "Jomolhari", serif;
     font-size: 1.13rem;
     color: #7F7C82;
     font-weight: 600;
     margin-bottom: 30px;
 }
-.profile .profile_in .profile_txt h4 {
+#profile .profile_in .profile_txt h4 {
     font-family: "Jomolhari", serif;
     font-weight: 600;
 }
-.profile .profile_in .profile_txt .sub_tit {display: flex;}
-.profile .profile_in .profile_txt .about {display: flex;}
-.profile .profile_in .profile_txt .about .about_left .name p {margin-left: 22px; letter-spacing: -1px;}
-.profile .profile_in .profile_txt .about .about_left .phone {margin-top: 20px;}
-.profile .profile_in .profile_txt .about .about_left .phone p {margin-left: 18px;}
-.profile .profile_in .profile_txt .about .about_right {margin-left: 65px;}
-.profile .profile_in .profile_txt .about .about_right .birth p {margin-left: 26px;}
-.profile .profile_in .profile_txt .about .about_right .email {margin-top: 20px;}
-.profile .profile_in .profile_txt .about .about_right .email p {margin-left: 20px;}
-.profile .profile_in .profile_txt .edu {margin-top: 50px;}
-.profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -1px;}
-.profile .profile_in .profile_txt .edu .grad {margin: 20px 0;}
-.profile .profile_in .profile_txt .edu .council {margin-bottom: 20px;}
-.profile .profile_in .profile_txt .lic_sk {display: flex; margin-top: 50px;}
-.profile .profile_in .profile_txt .lic_sk .license p {margin-left: 20px; letter-spacing: -1px;}
-.profile .profile_in .profile_txt .lic_sk .license .car {margin-top: 20px;}
-.profile .profile_in .profile_txt .lic_sk .skill {margin-left: 100px;}
-.profile .profile_in .profile_txt .lic_sk .skill .skicon_top {display: flex; margin-bottom: 10px;}
-.profile .profile_in .profile_txt .lic_sk .skill .skicon_top li {margin-right: 10px;}
-.profile .profile_in .profile_txt .lic_sk .skill .skicon_topp li:last-child {margin-right: 0;}
-.profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom {display: flex;}
-.profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li {margin-right: 10px;}
-.profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li:last-child {margin-right: 0;}
-.project01 .pj01_in {
+#profile .profile_in .profile_txt .sub_tit {display: flex;}
+#profile .profile_in .profile_txt .about {display: flex;}
+#profile .profile_in .profile_txt .about .about_left .name p {margin-left: 22px; letter-spacing: -1px;}
+#profile .profile_in .profile_txt .about .about_left .phone {margin-top: 20px;}
+#profile .profile_in .profile_txt .about .about_left .phone p {margin-left: 18px;}
+#profile .profile_in .profile_txt .about .about_right {margin-left: 65px;}
+#profile .profile_in .profile_txt .about .about_right .birth p {margin-left: 26px;}
+#profile .profile_in .profile_txt .about .about_right .email {margin-top: 20px;}
+#profile .profile_in .profile_txt .about .about_right .email p {margin-left: 20px;}
+#profile .profile_in .profile_txt .edu {margin-top: 50px;}
+#profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -1px;}
+#profile .profile_in .profile_txt .edu .grad {margin: 20px 0;}
+#profile .profile_in .profile_txt .edu .council {margin-bottom: 20px;}
+#profile .profile_in .profile_txt .lic_sk {display: flex; margin-top: 50px;}
+#profile .profile_in .profile_txt .lic_sk .license p {margin-left: 20px; letter-spacing: -1px;}
+#profile .profile_in .profile_txt .lic_sk .license .car {margin-top: 20px;}
+#profile .profile_in .profile_txt .lic_sk .skill {margin-left: 100px;}
+#profile .profile_in .profile_txt .lic_sk .skill .skicon_top {display: flex; margin-bottom: 10px;}
+#profile .profile_in .profile_txt .lic_sk .skill .skicon_top li {margin-right: 10px;}
+#profile .profile_in .profile_txt .lic_sk .skill .skicon_topp li:last-child {margin-right: 0;}
+#profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom {display: flex;}
+#profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li {margin-right: 10px;}
+#profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li:last-child {margin-right: 0;}
+#project01 .pj01_in {
     width: 1600px; height: 100%;
     margin: 0 auto;
 }
-.project01 .pj01_in h2 {
+#project01 .pj01_in h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 70px;
 }
-.project01 .pj01_in .web_s .web {margin: 50px 0 0 129px;}
-.project01 .pj01_in .web_s .web>div {display: flex;}
-.project01 .pj01_in .web_s .web>div .web_img {
+#project01 .pj01_in .web_s .web {margin: 50px 0 0 129px;}
+#project01 .pj01_in .web_s .web>div {display: flex;}
+#project01 .pj01_in .web_s .web>div .web_img {
     width: 720px; height: 752px;
     position: relative;
     overflow: hidden;
 }
-.project01 .pj01_in .web_s .web>div .web_img img {
+#project01 .pj01_in .web_s .web>div .web_img img {
     height: auto; width: 100%;
     position: absolute;
     top: 50%; left: 0;
     transform: translateY(-50%);
 }
-.project01 .pj01_in .web_s .web>div .web_txt {margin: 141px 0 0 73px;}
-.project01 .pj01_in .web_s .web>div .web_txt .text {display: flex; margin-bottom: 25px;}
-.project01 .pj01_in .web_s .web>div .web_txt .text h3 {
+#project01 .pj01_in .web_s .web>div .web_txt {margin: 141px 0 0 73px;}
+#project01 .pj01_in .web_s .web>div .web_txt .text {display: flex; margin-bottom: 25px;}
+#project01 .pj01_in .web_s .web>div .web_txt .text h3 {
     letter-spacing: -1px;
     color: #605C64;
     font-weight: 600;
 }
-.project01 .pj01_in .web_s .web>div .web_txt .text p {letter-spacing: -1px;}
-.project01 .pj01_in .web_s .web>div .web_txt .name p {margin-left: 40px;}
-.project01 .pj01_in .web_s .web>div .web_txt .date p {margin-left: 40px;}
-.project01 .pj01_in .web_s .web>div .web_txt .part p {margin-left: 54px;}
-.project01 .pj01_in .web_s .web>div .web_txt .page p {margin-left: 27px;}
-.project01 .pj01_in .web_s .web>div .web_txt .program p {margin-left: 10px;}
-.project01 .pj01_in .web_s .web>div .web_txt .purpose h3 {
+#project01 .pj01_in .web_s .web>div .web_txt .text p {letter-spacing: -1px;}
+#project01 .pj01_in .web_s .web>div .web_txt .name p {margin-left: 40px;}
+#project01 .pj01_in .web_s .web>div .web_txt .date p {margin-left: 40px;}
+#project01 .pj01_in .web_s .web>div .web_txt .part p {margin-left: 54px;}
+#project01 .pj01_in .web_s .web>div .web_txt .page p {margin-left: 27px;}
+#project01 .pj01_in .web_s .web>div .web_txt .program p {margin-left: 10px;}
+#project01 .pj01_in .web_s .web>div .web_txt .purpose h3 {
     letter-spacing: -1px;
     color: #605C64;
     font-weight: 600;
 }
-.project01 .pj01_in .web_s .web>div .web_txt .purpose p {margin-top: 20px; line-height: 140%;}
-.project01 .pj01_in .web_s .web>div .web_txt .btn {display: flex;}
-.project01 .pj01_in .web_s .web>div .web_txt .btn li {margin: 60px 0 0 10px;}
-.project01 .pj01_in .web_s .web>div .web_txt .btn li:first-child {margin-left: 0;}
-.project01 .pj01_in .web_s .web>div .web_txt .btn li a {
+#project01 .pj01_in .web_s .web>div .web_txt .purpose p {margin-top: 20px; line-height: 140%;}
+#project01 .pj01_in .web_s .web>div .web_txt .btn {display: flex;}
+#project01 .pj01_in .web_s .web>div .web_txt .btn li {margin: 60px 0 0 10px;}
+#project01 .pj01_in .web_s .web>div .web_txt .btn li:first-child {margin-left: 0;}
+#project01 .pj01_in .web_s .web>div .web_txt .btn li a {
     display: block;
     width: 130px; height: 42px;
     border: 1px solid #c8c3cd;
@@ -147,51 +148,51 @@
     text-align: center;
     line-height: 42px;
 }
-.project01 .pj01_in .web_s .web>div .web_txt .btn li:last-child a {
+#project01 .pj01_in .web_s .web>div .web_txt .btn li:last-child a {
     background-color: #7F7C82;
     border: none;
     color: #fff;
     font-weight: 300;
 }
-.project01 .pj01_in .web_s .swiper-button-prev {color: #7F7C82; transform: scale(.7);}
-.project01 .pj01_in .web_s .swiper-button-next {color: #7F7C82; transform: scale(.7);}
-.project02 .pj02_in {width: 1600px; margin: 0 auto; height: 100%;}
-.project02 .pj02_in h2 {
+#project01 .pj01_in .web_s .swiper-button-prev {color: #7F7C82; transform: scale(.7);}
+#project01 .pj01_in .web_s .swiper-button-next {color: #7F7C82; transform: scale(.7);}
+#project02 .pj02_in {width: 1600px; margin: 0 auto; height: 100%;}
+#project02 .pj02_in h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 70px;
 }
-.project02 .pj02_in .app {display: flex; margin: 113px 0 0 221px;}
-.project02 .pj02_in .app .app_img {
+#project02 .pj02_in .app {display: flex; margin: 113px 0 0 221px;}
+#project02 .pj02_in .app .app_img {
     width: 586px; height: 565px;
     background-color: #ddd;
 }
-.project02 .pj02_in .app .app_img img {height: 100%; width: auto;}
-.project02 .pj02_in .app .app_txt {margin: 86px 0 0 115px;}
-.project02 .pj02_in .app .app_txt .text {display: flex; margin-bottom: 25px;}
-.project02 .pj02_in .app .app_txt .text h3 {
+#project02 .pj02_in .app .app_img img {height: 100%; width: auto;}
+#project02 .pj02_in .app .app_txt {margin: 86px 0 0 115px;}
+#project02 .pj02_in .app .app_txt .text {display: flex; margin-bottom: 25px;}
+#project02 .pj02_in .app .app_txt .text h3 {
     letter-spacing: -1px;
     color: #605C64;
     font-weight: 600;
 }
-.project02 .pj02_in .app .app_txt .text p {letter-spacing: -1px;}
-.project02 .pj02_in .app .app_txt .name p {margin-left: 54px;}
-.project02 .pj02_in .app .app_txt .date p {margin-left: 40px;}
-.project02 .pj02_in .app .app_txt .part p {margin-left: 54px;}
-.project02 .pj02_in .app .app_txt .page p {margin-left: 27px;}
-.project02 .pj02_in .app .app_txt .program p {margin-left: 10px;}
-.project02 .pj02_in .app .app_txt .purpose h3 {
+#project02 .pj02_in .app .app_txt .text p {letter-spacing: -1px;}
+#project02 .pj02_in .app .app_txt .name p {margin-left: 54px;}
+#project02 .pj02_in .app .app_txt .date p {margin-left: 40px;}
+#project02 .pj02_in .app .app_txt .part p {margin-left: 54px;}
+#project02 .pj02_in .app .app_txt .page p {margin-left: 27px;}
+#project02 .pj02_in .app .app_txt .program p {margin-left: 10px;}
+#project02 .pj02_in .app .app_txt .purpose h3 {
     letter-spacing: -1px;
     color: #605C64;
     font-weight: 600;
 }
-.project02 .pj02_in .app .app_txt .purpose p {margin-top: 20px; line-height: 140%;}
-.project02 .pj02_in .app .app_txt .btn {display: flex; margin-top: 63px;}
-.project02 .pj02_in .app .app_txt .btn li {margin-left: 10px;}
-.project02 .pj02_in .app .app_txt .btn li:first-child {margin-left: 0;}
-.project02 .pj02_in .app .app_txt .btn li a{
+#project02 .pj02_in .app .app_txt .purpose p {margin-top: 20px; line-height: 140%;}
+#project02 .pj02_in .app .app_txt .btn {display: flex; margin-top: 63px;}
+#project02 .pj02_in .app .app_txt .btn li {margin-left: 10px;}
+#project02 .pj02_in .app .app_txt .btn li:first-child {margin-left: 0;}
+#project02 .pj02_in .app .app_txt .btn li a{
     display: block;
     width: 130px; height: 42px;
     border: 1px solid #c8c3cd;
@@ -200,47 +201,52 @@
     text-align: center;
     line-height: 42px;
 }
-.project02 .pj02_in .app .app_txt .btn li:last-child a {
+#project02 .pj02_in .app .app_txt .btn li:last-child a {
     background-color: #7F7C82;
     border: none;
     color: #fff;
     font-weight: 300;
 }
-.project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
-.project03 .pj03_in h2 {
+#project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
+#project03 .pj03_in h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 70px;
 }
-.project03 .pj03_in .sns {display: flex; margin-top: 195px;}
-.project03 .pj03_in .sns li {margin-left: 20px;}
-.project03 .pj03_in .sns li:first-child {margin-left: 0;}
-.project03 .pj03_in .sns li div {
+#project03 .pj03_in .snsS {animation: flow 90s linear infinite;}
+@keyframes flow {
+    0%{background-position-x: 0;}
+    100%{background-position-x: 10000px;}
+}
+#project03 .pj03_in .sns {display: flex; margin-top: 195px;}
+#project03 .pj03_in .sns li {margin-left: 20px;}
+#project03 .pj03_in .sns li:first-child {margin-left: 0;}
+#project03 .pj03_in .sns li div {
     width: 400px; height: 400px;
     background-color: #ddd;
 }
-.project03 .pj03_in .sns li div img {width: 100%; height: auto;}
-.project04 .pj04_in {width: 1600px; margin: 0 auto; height: 100%;}
-.project04 .pj04_in h2 {
+#project03 .pj03_in .sns li div img {width: 100%; height: auto;}
+#project04 .pj04_in {width: 1600px; margin: 0 auto; height: 100%;}
+#project04 .pj04_in h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 70px;
 }
-.project04 .pj04_in .detail {display: flex; margin: 170px 0 0 70px;}
-.project04 .pj04_in .detail li {margin-left: 20px;}
-.project04 .pj04_in .detail li:first-child {margin-left: 0;}
-.project04 .pj04_in .detail li div {
+#project04 .pj04_in .detail {display: flex; margin: 170px 0 0 70px;}
+#project04 .pj04_in .detail li {margin-left: 20px;}
+#project04 .pj04_in .detail li:first-child {margin-left: 0;}
+#project04 .pj04_in .detail li div {
     width: 350px; height: 450px;
     background-color: #ddd;
     overflow: hidden;
 }
-.project04 .pj04_in .detail li div img {width: 100%; height: auto;}
-.contact {position: relative;}
-.contact h2 {
+#project04 .pj04_in .detail li div img {width: 100%; height: auto;}
+#contact {position: relative;}
+#contact h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
     font-weight: 600;
@@ -248,11 +254,11 @@
     padding-top: 300px;
     text-align: center;
 }
-.contact .ct_in {display: flex; position: absolute; top: 420px; left: 50%; transform: translateX(-50%);}
-.contact .ct_in .kakao {}
-.contact .ct_in .kakao img {}
-.contact .ct_in .ct_txt {margin: 37px 0 0 30px;}
-.contact .ct_in .ct_txt .phone {display: flex; margin-bottom: 10px;}
-.contact .ct_in .ct_txt .phone p {margin: 5px 0 0 15px;}
-.contact .ct_in .ct_txt .email {display: flex;}
-.contact .ct_in .ct_txt .email p {margin: 5px 0 0 15px;}
+#contact .ct_in {display: flex; position: absolute; top: 420px; left: 50%; transform: translateX(-50%);}
+#contact .ct_in .kakao {}
+#contact .ct_in .kakao img {}
+#contact .ct_in .ct_txt {margin: 37px 0 0 30px;}
+#contact .ct_in .ct_txt .phone {display: flex; margin-bottom: 20px;}
+#contact .ct_in .ct_txt .phone p {margin: 5px 0 0 15px;}
+#contact .ct_in .ct_txt .email {display: flex;}
+#contact .ct_in .ct_txt .email p {margin: 5px 0 0 15px;}

@@ -6,3 +6,10 @@ const webS = new Swiper('.web_s', {
         nextEl:'.project01 .pj01_in .swiper-button-next',
     },
 });
+    const ports = new Swiper(".main",{
+        direction:'vertical',
+        mousewheel:true,
+        speed:1000,
+    })
+    const swiperEl = document.querySelector('swiper-container');
+    const swiper = swiperEl.swiper;
