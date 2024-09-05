@@ -97,7 +97,6 @@
 .project01 .pj01_in {
     width: 1600px; height: 100%;
     margin: 0 auto;
-    position: relative;
 }
 .project01 .pj01_in h2 {
     font-family: "Jomolhari", serif;
@@ -106,7 +105,7 @@
     color: #7F7C82;
     padding-top: 70px;
 }
-.project01 .pj01_in .web {}
+.project01 .pj01_in .web {margin-left: 129px;}
 .project01 .pj01_in .web li {display: flex;}
 .project01 .pj01_in .web li .web_img {
     width: 720px; height: 752px;
@@ -118,7 +117,7 @@
     position: absolute;
     top: 0; left: 50%; transform: translateX(-50%);
 }
-.project01 .pj01_in .web li .web_txt {margin: 165px 0 0 73px;}
+.project01 .pj01_in .web li .web_txt {margin: 141px 0 0 73px;}
 .project01 .pj01_in .web li .web_txt .text {display: flex; margin-bottom: 25px;}
 .project01 .pj01_in .web li .web_txt .text h3 {
     letter-spacing: -1px;
@@ -137,4 +136,21 @@
     font-weight: 600;
 }
 .project01 .pj01_in .web li .web_txt .purpose p {margin-top: 20px; line-height: 140%;}
-.project01 .pj01_in .web li .web_txt .btn {}
+.project01 .pj01_in .web li .web_txt .btn {display: flex;}
+.project01 .pj01_in .web li .web_txt .btn li {margin: 60px 0 0 10px;}
+.project01 .pj01_in .web li .web_txt .btn li:first-child {margin-left: 0;}
+.project01 .pj01_in .web li .web_txt .btn li a {
+    display: block;
+    width: 130px; height: 42px;
+    border: 1px solid #c8c3cd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 42px;
+}
+.project01 .pj01_in .web li .web_txt .btn li:last-child a {
+    background-color: #7F7C82;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+}
