@@ -29,7 +29,8 @@
     margin-top: 20px;
     font-size: 2.00rem;
 }
-.profile .profile_in {width: 1600px; margin: 0 auto; position: relative;}
+.profile {width: 100%; height: 960px;}
+.profile .profile_in {width: 1600px; height: 100%; margin: 0 auto; position: relative;}
 .profile .profile_in h2 {
     font-family: "Jomolhari", serif;
     font-size: 4.00rem;
@@ -92,3 +93,48 @@
 .profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom {display: flex;}
 .profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li {margin-right: 10px;}
 .profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li:last-child {margin-right: 0;}
+.project01 {width: 100%; height: 960px;}
+.project01 .pj01_in {
+    width: 1600px; height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.project01 .pj01_in h2 {
+    font-family: "Jomolhari", serif;
+    font-size: 4.00rem;
+    font-weight: 600;
+    color: #7F7C82;
+    padding-top: 70px;
+}
+.project01 .pj01_in .web {}
+.project01 .pj01_in .web li {display: flex;}
+.project01 .pj01_in .web li .web_img {
+    width: 720px; height: 752px;
+    position: relative;
+    overflow: hidden;
+}
+.project01 .pj01_in .web li .web_img img {
+    height: 100%; width: auto;
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+}
+.project01 .pj01_in .web li .web_txt {margin: 165px 0 0 73px;}
+.project01 .pj01_in .web li .web_txt .text {display: flex; margin-bottom: 25px;}
+.project01 .pj01_in .web li .web_txt .text h3 {
+    letter-spacing: -1px;
+    color: #605C64;
+    font-weight: 600;
+}
+.project01 .pj01_in .web li .web_txt .text p {letter-spacing: -1px;}
+.project01 .pj01_in .web li .web_txt .name p {margin-left: 40px;}
+.project01 .pj01_in .web li .web_txt .date p {margin-left: 40px;}
+.project01 .pj01_in .web li .web_txt .part p {margin-left: 54px;}
+.project01 .pj01_in .web li .web_txt .page p {margin-left: 27px;}
+.project01 .pj01_in .web li .web_txt .program p {margin-left: 10px;}
+.project01 .pj01_in .web li .web_txt .purpose h3 {
+    letter-spacing: -1px;
+    color: #605C64;
+    font-weight: 600;
+}
+.project01 .pj01_in .web li .web_txt .purpose p {margin-top: 20px; line-height: 140%;}
+.project01 .pj01_in .web li .web_txt .btn {}
