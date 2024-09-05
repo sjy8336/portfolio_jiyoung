@@ -1,7 +1,5 @@
-const swiper = new Swiper('.swiper', {
+const webS = new Swiper('.web_slide', {
     direction: 'vertical',
     loop: true,
-    /* navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',} */
+    autoplay:{delay:1500},
 });
