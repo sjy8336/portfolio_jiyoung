@@ -107,6 +107,7 @@
 .project01 .pj01_in .web_s .web>div {display: flex;}
 .project01 .pj01_in .web_s .web>div .web_img {
     width: 720px; height: 752px;
+    background-color: #ddd;
     position: relative;
     overflow: hidden;
 }
@@ -165,10 +166,10 @@
 .project02 .pj02_in .app {display: flex; margin: 113px 0 0 221px;}
 .project02 .pj02_in .app .app_img {
     width: 586px; height: 565px;
-    background-color: #7F7C82;
+    background-color: #ddd;
 }
 .project02 .pj02_in .app .app_img img {}
-.project02 .pj02_in .app .app_txt {margin-left: 115px;}
+.project02 .pj02_in .app .app_txt {margin: 86px 0 0 115px;}
 .project02 .pj02_in .app .app_txt .text {display: flex; margin-bottom: 25px;}
 .project02 .pj02_in .app .app_txt .text h3 {
     letter-spacing: -1px;
@@ -187,6 +188,37 @@
     font-weight: 600;
 }
 .project02 .pj02_in .app .app_txt .purpose p {margin-top: 20px; line-height: 140%;}
-.project02 .pj02_in .app .app_txt .btn {}
-.project02 .pj02_in .app .app_txt .btn li {}
-.project02 .pj02_in .app .app_txt .btn li a{}
+.project02 .pj02_in .app .app_txt .btn {display: flex; margin-top: 63px;}
+.project02 .pj02_in .app .app_txt .btn li {margin-left: 10px;}
+.project02 .pj02_in .app .app_txt .btn li:first-child {margin-left: 0;}
+.project02 .pj02_in .app .app_txt .btn li a{
+    display: block;
+    width: 130px; height: 42px;
+    border: 1px solid #c8c3cd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 42px;
+}
+.project02 .pj02_in .app .app_txt .btn li:last-child a {
+    background-color: #7F7C82;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+}
+.project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
+.project03 .pj03_in h2 {
+    font-family: "Jomolhari", serif;
+    font-size: 4.00rem;
+    font-weight: 600;
+    color: #7F7C82;
+    padding-top: 70px;
+}
+.project03 .pj03_in .sns {display: flex; margin-top: 195px;}
+.project03 .pj03_in .sns li {margin-left: 20px;}
+.project03 .pj03_in .sns li:first-child {margin-left: 0;}
+.project03 .pj03_in .sns li div {
+    width: 400px; height: 400px;
+    background-color: #ddd;
+}
+.project03 .pj03_in .sns li div img {}
