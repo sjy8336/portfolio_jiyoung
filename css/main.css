@@ -1,4 +1,4 @@
-.box {width: 100%; height: 960px; background-color: #F3F1F5;} /* 배경색 */
+.box {width: 100%; height: 100vh; background-color: #F3F1F5;} /* 배경색 */
 #intro .intro_in {width: 1600px; margin: 0 auto;}
 #intro .intro_in .tab {display: flex; justify-content: right; padding-top: 70px;}
 #intro .intro_in .tab li {margin-left: 30px;}
@@ -107,14 +107,14 @@
 .project01 .pj01_in .web_s .web>div {display: flex;}
 .project01 .pj01_in .web_s .web>div .web_img {
     width: 720px; height: 752px;
-    background-color: #ddd;
     position: relative;
     overflow: hidden;
 }
 .project01 .pj01_in .web_s .web>div .web_img img {
-    height: 100%; width: auto;
+    height: auto; width: 100%;
     position: absolute;
-    top: 0; left: 50%; transform: translateX(-50%);
+    top: 50%; left: 0;
+    transform: translateY(-50%);
 }
 .project01 .pj01_in .web_s .web>div .web_txt {margin: 141px 0 0 73px;}
 .project01 .pj01_in .web_s .web>div .web_txt .text {display: flex; margin-bottom: 25px;}
@@ -168,7 +168,7 @@
     width: 586px; height: 565px;
     background-color: #ddd;
 }
-.project02 .pj02_in .app .app_img img {}
+.project02 .pj02_in .app .app_img img {height: 100%; width: auto;}
 .project02 .pj02_in .app .app_txt {margin: 86px 0 0 115px;}
 .project02 .pj02_in .app .app_txt .text {display: flex; margin-bottom: 25px;}
 .project02 .pj02_in .app .app_txt .text h3 {
@@ -221,4 +221,38 @@
     width: 400px; height: 400px;
     background-color: #ddd;
 }
-.project03 .pj03_in .sns li div img {}
+.project03 .pj03_in .sns li div img {width: 100%; height: auto;}
+.project04 .pj04_in {width: 1600px; margin: 0 auto; height: 100%;}
+.project04 .pj04_in h2 {
+    font-family: "Jomolhari", serif;
+    font-size: 4.00rem;
+    font-weight: 600;
+    color: #7F7C82;
+    padding-top: 70px;
+}
+.project04 .pj04_in .detail {display: flex; margin: 170px 0 0 70px;}
+.project04 .pj04_in .detail li {margin-left: 20px;}
+.project04 .pj04_in .detail li:first-child {margin-left: 0;}
+.project04 .pj04_in .detail li div {
+    width: 350px; height: 450px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+.project04 .pj04_in .detail li div img {width: 100%; height: auto;}
+.contact {position: relative;}
+.contact h2 {
+    font-family: "Jomolhari", serif;
+    font-size: 4.00rem;
+    font-weight: 600;
+    color: #7F7C82;
+    padding-top: 300px;
+    text-align: center;
+}
+.contact .ct_in {display: flex; position: absolute; top: 420px; left: 50%; transform: translateX(-50%);}
+.contact .ct_in .kakao {}
+.contact .ct_in .kakao img {}
+.contact .ct_in .ct_txt {margin: 37px 0 0 30px;}
+.contact .ct_in .ct_txt .phone {display: flex; margin-bottom: 10px;}
+.contact .ct_in .ct_txt .phone p {margin: 5px 0 0 15px;}
+.contact .ct_in .ct_txt .email {display: flex;}
+.contact .ct_in .ct_txt .email p {margin: 5px 0 0 15px;}
