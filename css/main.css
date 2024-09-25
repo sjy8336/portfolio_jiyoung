@@ -1,42 +1,46 @@
-.main {height: 100vh;}
-.box {width: 100%; height: 960px; background-color: #F3F1F5;} /* 배경색 */
-#intro .intro_in {width: 1600px; margin: 0 auto;}
-#intro .intro_in .menu {display: fixed;}
-#intro .intro_in .menu .tab {display: flex; justify-content: right; padding-top: 70px;}
-#intro .intro_in .menu .tab li {margin-left: 30px;}
-#intro .intro_in .menu .tab li:first-child {margin-left: 0;}
-#intro .intro_in .menu .tab li a {
-    font-family: "Jomolhari", serif;
+body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
+.tab {display: flex; justify-content: right; padding: 80px ; position:fixed; right:50px; top:0; z-index: 990;}
+.tab a {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 600;
     color: #7F7C82;
+    margin-left: 30px;
 }
+.main {height: 100vh;}
+.box {width: 100%; height: 960px;} /* 배경색 */
+#intro .intro_in {width: 1600px; margin: 0 auto; position: relative;}
+#intro .intro_in .menu .tab a:first-child {margin: 0;}
 #intro .intro_in p {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     text-align: center;
     color: #7F7C82;
 }
 #intro .intro_in .year {
     font-size: 1.75rem;
-    margin-top: 298px;
+    font-weight: 400;
+    margin-top: 330px;
 }
 #intro .intro_in h1 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     text-align: center;
     margin-top: 20px;
-    font-size: 4.00rem;
-    font-weight: 600;
+    font-size: 6.25rem;
+    font-weight: 700;
     color: #7F7C82;
 }
 #intro .intro_in .job {
-    margin-top: 20px;
+    margin-top: 360px;
     font-size: 2.00rem;
+    font-weight: 600;
+    text-align: left;
 }
 #profile .profile_in {width: 1600px; height: 100%; margin: 0 auto; position: relative;}
 #profile .profile_in h2 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 #profile .profile_in .profile_img {
     position: absolute;
@@ -59,14 +63,14 @@
     top: 267px; left: 666px;
 }
 #profile .profile_in .profile_txt h3 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-size: 1.13rem;
     color: #7F7C82;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 #profile .profile_in .profile_txt h4 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-weight: 600;
 }
 #profile .profile_in .profile_txt .sub_tit {display: flex;}
@@ -97,11 +101,11 @@
     margin: 0 auto;
 }
 #project01 .pj01_in h2 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 #project01 .pj01_in .web_s .web {margin: 50px 0 0 129px;}
 #project01 .pj01_in .web_s .web>div {display: flex;}
@@ -136,16 +140,16 @@
 }
 #project01 .pj01_in .web_s .web>div .web_txt .purpose p {margin-top: 20px; line-height: 140%;}
 #project01 .pj01_in .web_s .web>div .web_txt .btn {display: flex;}
-#project01 .pj01_in .web_s .web>div .web_txt .btn li {margin: 60px 0 0 10px;}
+#project01 .pj01_in .web_s .web>div .web_txt .btn li {margin: 45px 0 0 10px;}
 #project01 .pj01_in .web_s .web>div .web_txt .btn li:first-child {margin-left: 0;}
 #project01 .pj01_in .web_s .web>div .web_txt .btn li a {
     display: block;
-    width: 130px; height: 42px;
+    width: 130px; height: 37px;
     border: 1px solid #c8c3cd;
     border-radius: 5px;
     box-sizing: border-box;
     text-align: center;
-    line-height: 42px;
+    line-height: 37px;
     transition: all .4s;
 }
 #project01 .pj01_in .web_s .web>div .web_txt .btn li a:hover {background-color: #c8c3cd;}
@@ -161,16 +165,11 @@
 #project01 .pj01_in .web_s .swiper-button-next {color: #7F7C82; transform: scale(.7);}
 #project02 .pj02_in {width: 1600px; margin: 0 auto; height: 100%;}
 #project02 .pj02_in h2 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 70px;
-}
-#project02 .pj02_in .snsS {animation: flow 90s linear infinite;}
-@keyframes flow {
-    0%{background-position-x: 0;}
-    100%{background-position-x: 10000px;}
+    padding-top: 80px;
 }
 #project02 .pj02_in .sns {display: flex; margin-top: 195px;}
 #project02 .pj02_in .sns li {margin-left: 20px;}
@@ -182,24 +181,33 @@
 #project02 .pj02_in .sns li div img {width: 100%; height: auto;}
 #project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
 #project03 .pj03_in h2 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 70px;
 }
-#project03 .pj03_in .detail {display: flex; margin: 170px 0 0 70px;}
-#project03 .pj03_in .detail li {margin-left: 20px;}
+#project03 .pj03_in .detail {display: flex; margin: 170px 0 0; justify-content: center;}
+#project03 .pj03_in .detail li {margin-left: 100px;}
 #project03 .pj03_in .detail li:first-child {margin-left: 0;}
 #project03 .pj03_in .detail li div {
-    width: 350px; height: 450px;
+    width: 350px; height: 500px;
     background-color: #ddd;
     overflow: hidden;
 }
 #project03 .pj03_in .detail li div img {width: 100%; height: auto;}
+.big_bg {
+    position:fixed; left:0; top:0; z-index: 999;
+    width:100%; height:100vh;
+    background: rgba(0,0,0,0.6);
+}
+.big_bg .img {max-width: 50vw; margin:30px auto; height:90vh; overflow-y: auto; overflow-x: hidden;}
+.big_bg .img img {width:100%;}
+.big_bg .img::-webkit-scrollbar {background-color: #605C64; width: 4px; height: 10px;}
+.big_bg .img::-webkit-scrollbar-thumb {background-color: #A6A2AB;}
 #contact {position: relative;}
 #contact h2 {
-    font-family: "Jomolhari", serif;
+    font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
