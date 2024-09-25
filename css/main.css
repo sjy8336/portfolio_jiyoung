@@ -8,7 +8,6 @@
 #intro .intro_in .menu .tab li a {
     font-family: "Jomolhari", serif;
     color: #7F7C82;
-    letter-spacing: 0px;
 }
 #intro .intro_in p {
     font-family: "Jomolhari", serif;
@@ -48,11 +47,11 @@
     background-color: lightgray;
 }
 #profile .profile_in .profile_img p {
-    font-family: "Jomolhari", serif;
-    letter-spacing: -1px;
+    letter-spacing: -0.01em;
     font-size: 1.13rem;
-    margin-top: 20px;
-    margin-left: -9px;
+    margin: 20px 0 0 20px;
+    font-weight: 600;
+    color: #333;
 }
 #profile .profile_in .profile_img p span {color: #A6A2AB;}
 #profile .profile_in .profile_txt {
@@ -80,12 +79,12 @@
 #profile .profile_in .profile_txt .about .about_right .email {margin-top: 20px;}
 #profile .profile_in .profile_txt .about .about_right .email p {margin-left: 20px;}
 #profile .profile_in .profile_txt .edu {margin-top: 50px;}
-#profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -1px;}
+#profile .profile_in .profile_txt .edu p {margin-left: 20px; letter-spacing: -0.01em;}
 #profile .profile_in .profile_txt .edu .grad {margin: 20px 0;}
 #profile .profile_in .profile_txt .edu .council {margin-bottom: 20px;}
 #profile .profile_in .profile_txt .lic_sk {display: flex; margin-top: 50px;}
-#profile .profile_in .profile_txt .lic_sk .license p {margin-left: 20px; letter-spacing: -1px;}
-#profile .profile_in .profile_txt .lic_sk .license .car {margin-top: 20px;}
+#profile .profile_in .profile_txt .lic_sk .license > div {margin: 20px 0 0;}
+#profile .profile_in .profile_txt .lic_sk .license p {margin-left: 20px; letter-spacing: -0.01em;}
 #profile .profile_in .profile_txt .lic_sk .skill {margin-left: 100px;}
 #profile .profile_in .profile_txt .lic_sk .skill .skicon_top {display: flex; margin-bottom: 10px;}
 #profile .profile_in .profile_txt .lic_sk .skill .skicon_top li {margin-right: 10px;}
@@ -120,11 +119,11 @@
 #project01 .pj01_in .web_s .web>div .web_txt {margin: 141px 0 0 73px;}
 #project01 .pj01_in .web_s .web>div .web_txt .text {display: flex; margin-bottom: 25px;}
 #project01 .pj01_in .web_s .web>div .web_txt .text h3 {
-    letter-spacing: -1px;
+    letter-spacing: -0.01em;
     color: #605C64;
     font-weight: 600;
 }
-#project01 .pj01_in .web_s .web>div .web_txt .text p {letter-spacing: -1px;}
+#project01 .pj01_in .web_s .web>div .web_txt .text p {letter-spacing: -0.01em;}
 #project01 .pj01_in .web_s .web>div .web_txt .name p {margin-left: 40px;}
 #project01 .pj01_in .web_s .web>div .web_txt .date p {margin-left: 40px;}
 #project01 .pj01_in .web_s .web>div .web_txt .part p {margin-left: 54px;}
@@ -147,13 +146,17 @@
     box-sizing: border-box;
     text-align: center;
     line-height: 42px;
+    transition: all .4s;
 }
-#project01 .pj01_in .web_s .web>div .web_txt .btn li:last-child a {
+#project01 .pj01_in .web_s .web>div .web_txt .btn li a:hover {background-color: #c8c3cd;}
+#project01 .pj01_in .web_s .web>div .web_txt .btn li:nth-child(4) a {
     background-color: #7F7C82;
     border: none;
     color: #fff;
     font-weight: 300;
+    transition: all .4s;
 }
+#project01 .pj01_in .web_s .web>div .web_txt .btn li:nth-child(4) a:hover {background-color: #605C64;}
 #project01 .pj01_in .web_s .swiper-button-prev {color: #7F7C82; transform: scale(.7);}
 #project01 .pj01_in .web_s .swiper-button-next {color: #7F7C82; transform: scale(.7);}
 #project02 .pj02_in {width: 1600px; margin: 0 auto; height: 100%;}
@@ -164,49 +167,19 @@
     color: #7F7C82;
     padding-top: 70px;
 }
-#project02 .pj02_in .app {display: flex; margin: 113px 0 0 221px;}
-#project02 .pj02_in .app .app_img {
-    width: 586px; height: 565px;
+#project02 .pj02_in .snsS {animation: flow 90s linear infinite;}
+@keyframes flow {
+    0%{background-position-x: 0;}
+    100%{background-position-x: 10000px;}
+}
+#project02 .pj02_in .sns {display: flex; margin-top: 195px;}
+#project02 .pj02_in .sns li {margin-left: 20px;}
+#project02 .pj02_in .sns li:first-child {margin-left: 0;}
+#project02 .pj02_in .sns li div {
+    width: 400px; height: 400px;
     background-color: #ddd;
 }
-#project02 .pj02_in .app .app_img img {height: 100%; width: auto;}
-#project02 .pj02_in .app .app_txt {margin: 86px 0 0 115px;}
-#project02 .pj02_in .app .app_txt .text {display: flex; margin-bottom: 25px;}
-#project02 .pj02_in .app .app_txt .text h3 {
-    letter-spacing: -1px;
-    color: #605C64;
-    font-weight: 600;
-}
-#project02 .pj02_in .app .app_txt .text p {letter-spacing: -1px;}
-#project02 .pj02_in .app .app_txt .name p {margin-left: 54px;}
-#project02 .pj02_in .app .app_txt .date p {margin-left: 40px;}
-#project02 .pj02_in .app .app_txt .part p {margin-left: 54px;}
-#project02 .pj02_in .app .app_txt .page p {margin-left: 27px;}
-#project02 .pj02_in .app .app_txt .program p {margin-left: 10px;}
-#project02 .pj02_in .app .app_txt .purpose h3 {
-    letter-spacing: -1px;
-    color: #605C64;
-    font-weight: 600;
-}
-#project02 .pj02_in .app .app_txt .purpose p {margin-top: 20px; line-height: 140%;}
-#project02 .pj02_in .app .app_txt .btn {display: flex; margin-top: 63px;}
-#project02 .pj02_in .app .app_txt .btn li {margin-left: 10px;}
-#project02 .pj02_in .app .app_txt .btn li:first-child {margin-left: 0;}
-#project02 .pj02_in .app .app_txt .btn li a{
-    display: block;
-    width: 130px; height: 42px;
-    border: 1px solid #c8c3cd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 42px;
-}
-#project02 .pj02_in .app .app_txt .btn li:last-child a {
-    background-color: #7F7C82;
-    border: none;
-    color: #fff;
-    font-weight: 300;
-}
+#project02 .pj02_in .sns li div img {width: 100%; height: auto;}
 #project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
 #project03 .pj03_in h2 {
     font-family: "Jomolhari", serif;
@@ -215,36 +188,15 @@
     color: #7F7C82;
     padding-top: 70px;
 }
-#project03 .pj03_in .snsS {animation: flow 90s linear infinite;}
-@keyframes flow {
-    0%{background-position-x: 0;}
-    100%{background-position-x: 10000px;}
-}
-#project03 .pj03_in .sns {display: flex; margin-top: 195px;}
-#project03 .pj03_in .sns li {margin-left: 20px;}
-#project03 .pj03_in .sns li:first-child {margin-left: 0;}
-#project03 .pj03_in .sns li div {
-    width: 400px; height: 400px;
-    background-color: #ddd;
-}
-#project03 .pj03_in .sns li div img {width: 100%; height: auto;}
-#project04 .pj04_in {width: 1600px; margin: 0 auto; height: 100%;}
-#project04 .pj04_in h2 {
-    font-family: "Jomolhari", serif;
-    font-size: 4.00rem;
-    font-weight: 600;
-    color: #7F7C82;
-    padding-top: 70px;
-}
-#project04 .pj04_in .detail {display: flex; margin: 170px 0 0 70px;}
-#project04 .pj04_in .detail li {margin-left: 20px;}
-#project04 .pj04_in .detail li:first-child {margin-left: 0;}
-#project04 .pj04_in .detail li div {
+#project03 .pj03_in .detail {display: flex; margin: 170px 0 0 70px;}
+#project03 .pj03_in .detail li {margin-left: 20px;}
+#project03 .pj03_in .detail li:first-child {margin-left: 0;}
+#project03 .pj03_in .detail li div {
     width: 350px; height: 450px;
     background-color: #ddd;
     overflow: hidden;
 }
-#project04 .pj04_in .detail li div img {width: 100%; height: auto;}
+#project03 .pj03_in .detail li div img {width: 100%; height: auto;}
 #contact {position: relative;}
 #contact h2 {
     font-family: "Jomolhari", serif;
