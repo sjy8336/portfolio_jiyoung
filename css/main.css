@@ -1,5 +1,5 @@
 body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
-.tab {display: flex; justify-content: right; padding: 80px ; position:fixed; right:50px; top:0; z-index: 990;}
+.tab {display: flex; justify-content: right; padding: 80px; position:fixed; right:50px; top:0; z-index: 10;}
 .tab a {
     font-family: "Noto Serif KR", serif;
     font-weight: 600;
@@ -219,8 +219,6 @@ position: absolute; top: 0; right: 0;}
     text-align: center;
 }
 #contact .ct_in {display: flex; position: absolute; top: 420px; left: 50%; transform: translateX(-50%);}
-#contact .ct_in .kakao {}
-#contact .ct_in .kakao img {}
 #contact .ct_in .ct_txt {margin: 37px 0 0 30px;}
 #contact .ct_in .ct_txt .phone {display: flex; margin-bottom: 20px;}
 #contact .ct_in .ct_txt .phone p {margin: 5px 0 0 15px;}

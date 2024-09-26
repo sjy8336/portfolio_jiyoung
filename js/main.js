@@ -2,6 +2,7 @@ const webS = new Swiper('.web_s', {
     loop: true,
     autoplay:{delay:2000},
 });
+const navi = document.querySelector ('.tab');
 const bigD = document.querySelector('.big_bg');
 const detail_img = document.querySelectorAll('.detail li div img');
 const big_img = document.querySelector('.big_bg img');
@@ -15,7 +16,9 @@ for(let detail of detail_img){//6개 이미지 반복문 접근
         bigD.style.display = 'block'
         //팝업 실행 시 body 스크롤 막기
         document.body.style.overflow = 'hidden';
-        //클릭한 이미지의 경로(src)를 큰 이미지 팝업의 src로 대입하기
+        navi.style.zIndex = '0'
+        ports.disable()
+        //클릭한 (이미지의 경로(src)를 큰 이미지 팝업의 src로 대입하기
         big_img.src = detail.src
         //이전 팝업에서 내린 스크롤을 기억하지 않도록 항상 스크롤 위로 올리기
         bigD.children[0].scrollTo(0,0)
@@ -25,6 +28,8 @@ for(let detail of detail_img){//6개 이미지 반복문 접근
 bigD.addEventListener('click',()=>{
     bigD.style.display = 'none'
     document.body.style.overflow = '';
+    ports.enable()
+    navi.style.zIndex = '100'
 })
 const ports = new Swiper(".main",{
     direction:'vertical',
