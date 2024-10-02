@@ -1,5 +1,5 @@
 body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
-.tab {display: flex; justify-content: right; padding: 80px; position:fixed; right:50px; top:0; z-index: 10;}
+.tab {display: flex; justify-content: right; padding: 60px 110px 0; position:fixed; right:50px; top:0; z-index: 10;}
 .tab a {
     font-family: "Noto Serif KR", serif;
     font-weight: 600;
@@ -40,11 +40,11 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 #profile .profile_in .profile_img {
     position: absolute;
-    top: 267px; left: 240px;
+    top: 247px; left: 240px;
 }
 #profile .profile_in .profile_img .photo {
     width: 356px; height: 436px;
@@ -52,8 +52,7 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     overflow: hidden;
     position: relative;
 }
-#profile .profile_in .profile_img .photo img {height: 110%; width: auto; 
-position: absolute; top: 0; right: 0;}
+#profile .profile_in .profile_img .photo img {height: 110%; width: auto; position: absolute; top: 0; right: 0;}
 #profile .profile_in .profile_img p {
     letter-spacing: -0.01em;
     font-size: 1.13rem;
@@ -62,10 +61,7 @@ position: absolute; top: 0; right: 0;}
     color: #333;
 }
 #profile .profile_in .profile_img p span {color: #A6A2AB;}
-#profile .profile_in .profile_txt {
-    position: absolute;
-    top: 267px; left: 666px;
-}
+#profile .profile_in .profile_txt {position: absolute; top: 247px; left: 666px;}
 #profile .profile_in .profile_txt h3 {
     font-family: "Noto Serif KR", serif;
     font-size: 1.13rem;
@@ -73,10 +69,7 @@ position: absolute; top: 0; right: 0;}
     font-weight: 700;
     margin-bottom: 30px;
 }
-#profile .profile_in .profile_txt h4 {
-    font-family: "Noto Serif KR", serif;
-    font-weight: 600;
-}
+#profile .profile_in .profile_txt h4 {font-family: "Noto Serif KR", serif; font-weight: 600;}
 #profile .profile_in .profile_txt .sub_tit {display: flex;}
 #profile .profile_in .profile_txt .about {display: flex;}
 #profile .profile_in .profile_txt .about .about_left .name p {margin-left: 22px; letter-spacing: -1px;}
@@ -100,18 +93,15 @@ position: absolute; top: 0; right: 0;}
 #profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom {display: flex;}
 #profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li {margin-right: 10px;}
 #profile .profile_in .profile_txt .lic_sk .skill .skicon_bottom li:last-child {margin-right: 0;}
-#project01 .pj01_in {
-    width: 1600px; height: 100%;
-    margin: 0 auto;
-}
+#project01 .pj01_in {width: 1600px; height: 100%; margin: 0 auto;}
 #project01 .pj01_in h2 {
     font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 80px;
+    padding-top: 60px;
 }
-#project01 .pj01_in .web_s .web {margin: 50px 0 0 129px;}
+#project01 .pj01_in .web_s .web {margin: 30px 0 0 129px;}
 #project01 .pj01_in .web_s .web>div {display: flex;}
 #project01 .pj01_in .web_s .web>div .web_img {
     width: 720px; height: 752px;
@@ -124,7 +114,7 @@ position: absolute; top: 0; right: 0;}
     top: 50%; left: 0;
     transform: translateY(-50%);
 }
-#project01 .pj01_in .web_s .web>div .web_txt {margin: 141px 0 0 73px;}
+#project01 .pj01_in .web_s .web>div .web_txt {margin: 121px 0 0 73px;}
 #project01 .pj01_in .web_s .web>div .web_txt .text {display: flex; margin-bottom: 25px;}
 #project01 .pj01_in .web_s .web>div .web_txt .text h3 {
     letter-spacing: -0.01em;
@@ -173,42 +163,58 @@ position: absolute; top: 0; right: 0;}
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 80px;
+    padding-top: 60px;
 }
-#project02 .pj02_in .sns {display: flex; margin-top: 195px; justify-content: center;}
-#project02 .pj02_in .sns li {margin-left: 20px;}
+#project02 .pj02_in .sns {width: 100%; display: flex; margin-top: 175px; justify-content: space-between;}
+#project02 .pj02_in .sns li {/* margin-left: 20px; */}
 #project02 .pj02_in .sns li:first-child {margin-left: 0;}
-#project02 .pj02_in .sns li div {
-    width: 400px; height: 400px;
-    background-color: #ddd;
+#project02 .pj02_in .sns li {width: 380px; height: 380px; background-color: #ddd;}
+#project02 .pj02_in .sns li img {width: 100%; height: auto;}
+#project02 .pj02_in .big_bg {
+    position:fixed; left:0; top:0; z-index: 999;
+    width:100%; height:100vh;
+    background: rgba(0,0,0,0.6);
 }
-#project02 .pj02_in .sns li div img {width: 100%; height: auto;}
+#project02 .pj02_in .big_bg .img {max-width: 800px; margin:30px auto; height:800px;/*  overflow-y: auto; overflow-x: hidden; */}
+#project02 .pj02_in .big_bg .img img {width:100%;}
 #project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
 #project03 .pj03_in h2 {
     font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
-    padding-top: 70px;
+    padding-top: 60px;
 }
-#project03 .pj03_in .detail {display: flex; margin: 170px 0 0; justify-content: center;}
+#project03 .pj03_in .detail {display: flex; margin: 150px 0 0; justify-content: center;}
 #project03 .pj03_in .detail li {margin-left: 100px;}
 #project03 .pj03_in .detail li:first-child {margin-left: 0;}
-#project03 .pj03_in .detail li div {
+#project03 .pj03_in .detail li {
     width: 350px; height: 500px;
     background-color: #ddd;
     overflow: hidden;
 }
-#project03 .pj03_in .detail li div img {width: 100%; height: auto;}
-.big_bg {
+#project03 .pj03_in .detail li img {width: 100%; height: auto;}
+.pj03_in .big_bg {
     position:fixed; left:0; top:0; z-index: 999;
     width:100%; height:100vh;
     background: rgba(0,0,0,0.6);
 }
-.big_bg .img {max-width: 50vw; margin:30px auto; height:90vh; overflow-y: auto; overflow-x: hidden;}
-.big_bg .img img {width:100%;}
-.big_bg .img::-webkit-scrollbar {background-color: #605C64; width: 4px; height: 10px;}
-.big_bg .img::-webkit-scrollbar-thumb {background-color: #A6A2AB;}
+.pj03_in .big_bg .img {max-width: 50vw; margin:30px auto; height:90vh; overflow-y: auto; overflow-x: hidden;}
+.pj03_in .big_bg .img img {width:100%;}
+.pj03_in .big_bg .img::-webkit-scrollbar {background-color: #605C64; width: 6px; height: 10px;}
+.pj03_in .big_bg .img::-webkit-scrollbar-thumb {background-color: #A6A2AB;}
+#project04 .pj04_in {width: 1600px; margin: 0 auto; height: 100%;}
+#project04 .pj04_in h2 {
+    font-family: "Noto Serif KR", serif;
+    font-size: 4.00rem;
+    font-weight: 600;
+    color: #7F7C82;
+    padding-top: 60px;
+}
+#project04 .pj04_in .banner {display: flex; justify-content: space-between; margin: 160px 0 0; flex-flow: wrap;}
+#project04 .pj04_in .banner li {width: 750px; height: 200px; background-color: antiquewhite;}
+#project04 .pj04_in .banner li:nth-child(3), #project04 .pj04_in .banner li:nth-child(4) {margin: 20px 0 0;}
+#project04 .pj04_in .banner li img {width: 100%; height: auto;}
 #contact {position: relative;}
 #contact h2 {
     font-family: "Noto Serif KR", serif;

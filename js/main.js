@@ -1,11 +1,25 @@
+const ports = new Swiper(".main",{
+    direction:'vertical',
+    mousewheel:true,
+    speed:700,
+});
+const nav = document.querySelectorAll ('nav a');
+for(let i of nav){
+    i.addEventListener('click', function(e){
+        e.preventDefault()
+        const slideIndex = this.getAttribute('data-slide')
+        /* console.log(slideIndex); */
+        ports.slideTo(slideIndex)
+    })
+}
 const webS = new Swiper('.web_s', {
     loop: true,
-    autoplay:{delay:2000},
+    autoplay:{delay:3000},
 });
 const navi = document.querySelector ('.tab');
-const bigD = document.querySelector('.big_bg');
-const detail_img = document.querySelectorAll('.detail li div img');
-const big_img = document.querySelector('.big_bg img');
+const bigD = document.querySelector('.pj03_in .big_bg');
+const detail_img = document.querySelectorAll('.detail li img');
+const big_imgD = document.querySelector('.pj03_in .big_bg img');
 const body = document.querySelectorAll('body');
 bigD.style.display = 'none';
 for(let detail of detail_img){//6개 이미지 반복문 접근
@@ -19,7 +33,7 @@ for(let detail of detail_img){//6개 이미지 반복문 접근
         navi.style.zIndex = '0'
         ports.disable()
         //클릭한 (이미지의 경로(src)를 큰 이미지 팝업의 src로 대입하기
-        big_img.src = detail.src
+        big_imgD.src = detail.src
         //이전 팝업에서 내린 스크롤을 기억하지 않도록 항상 스크롤 위로 올리기
         bigD.children[0].scrollTo(0,0)
     })
@@ -31,8 +45,24 @@ bigD.addEventListener('click',()=>{
     ports.enable()
     navi.style.zIndex = '100'
 })
-const ports = new Swiper(".main",{
-    direction:'vertical',
-    mousewheel:true,
-    speed:700,
+const bigS = document.querySelector('.pj02_in .big_bg');
+const ban_img = document.querySelectorAll('.sns li img');
+const big_imgS = document.querySelector('.pj02_in .big_bg img');
+bigS.style.display = 'none';
+for(let sns of ban_img){
+    sns.addEventListener('click',(e)=>{
+        e.preventDefault()
+        bigS.style.display = 'block'
+        document.body.style.overflow = 'hidden';
+        navi.style.zIndex = '0'
+        ports.disable()
+        big_imgS.src = sns.src
+        bigS.children[0].scrollTo(0,0)
+    })
+}
+bigS.addEventListener('click',()=>{
+    bigS.style.display = 'none'
+    document.body.style.overflow = '';
+    ports.enable()
+    navi.style.zIndex = '100'
 })
