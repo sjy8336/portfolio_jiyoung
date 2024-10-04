@@ -212,9 +212,9 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     padding-top: 60px;
 }
 #project04 .pj04_in .banner {display: flex; justify-content: space-between; margin: 160px 0 0; flex-flow: wrap;}
-#project04 .pj04_in .banner li {width: 750px; height: 200px; background-color: antiquewhite;}
+#project04 .pj04_in .banner li {width: 750px; height: 200px; overflow: hidden; position: relative;}
 #project04 .pj04_in .banner li:nth-child(3), #project04 .pj04_in .banner li:nth-child(4) {margin: 20px 0 0;}
-#project04 .pj04_in .banner li img {width: 100%; height: auto;}
+#project04 .pj04_in .banner li img {width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #contact {position: relative;}
 #contact h2 {
     font-family: "Noto Serif KR", serif;
