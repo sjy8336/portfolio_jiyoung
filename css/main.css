@@ -166,8 +166,7 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     padding-top: 60px;
 }
 #project02 .pj02_in .sns {width: 100%; display: flex; margin-top: 175px; justify-content: space-between;}
-#project02 .pj02_in .sns li {/* margin-left: 20px; */}
-#project02 .pj02_in .sns li:first-child {margin-left: 0;}
+#project02 .pj02_in .sns li {cursor: pointer;}
 #project02 .pj02_in .sns li {width: 380px; height: 380px; background-color: #ddd;}
 #project02 .pj02_in .sns li img {width: 100%; height: auto;}
 #project02 .pj02_in .big_bg {
@@ -175,7 +174,7 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     width:100%; height:100vh;
     background: rgba(0,0,0,0.6);
 }
-#project02 .pj02_in .big_bg .img {max-width: 800px; margin:30px auto; height:800px;/*  overflow-y: auto; overflow-x: hidden; */}
+#project02 .pj02_in .big_bg .img {max-width: 800px; margin:80px auto 0; height:800px;/*  overflow-y: auto; overflow-x: hidden; */}
 #project02 .pj02_in .big_bg .img img {width:100%;}
 #project03 .pj03_in {width: 1600px; margin: 0 auto; height: 100%;}
 #project03 .pj03_in h2 {
@@ -186,7 +185,7 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     padding-top: 60px;
 }
 #project03 .pj03_in .detail {display: flex; margin: 150px 0 0; justify-content: center;}
-#project03 .pj03_in .detail li {margin-left: 100px;}
+#project03 .pj03_in .detail li {margin-left: 100px; cursor: pointer;}
 #project03 .pj03_in .detail li:first-child {margin-left: 0;}
 #project03 .pj03_in .detail li {
     width: 350px; height: 500px;
@@ -212,9 +211,9 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     padding-top: 60px;
 }
 #project04 .pj04_in .banner {display: flex; justify-content: space-between; margin: 160px 0 0; flex-flow: wrap;}
-#project04 .pj04_in .banner li {width: 750px; height: 200px; overflow: hidden; position: relative;}
+#project04 .pj04_in .banner li {width: 750px; height: 225px;}
 #project04 .pj04_in .banner li:nth-child(3), #project04 .pj04_in .banner li:nth-child(4) {margin: 20px 0 0;}
-#project04 .pj04_in .banner li img {width: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#project04 .pj04_in .banner li img {width: 100%; height: auto;}
 #contact {position: relative;}
 #contact h2 {
     font-family: "Noto Serif KR", serif;
