@@ -151,7 +151,7 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
     background-color: #7F7C82;
     border: none;
     color: #fff;
-    font-weight: 300;
+    font-weight: 200;
     transition: all .4s;
 }
 #project01 .pj01_in .web_s .web>div .web_txt .btn li:nth-child(4) a:hover {background-color: #605C64;}
