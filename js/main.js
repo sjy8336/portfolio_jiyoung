@@ -66,3 +66,24 @@ bigS.addEventListener('click',()=>{
     ports.enable()
     navi.style.zIndex = '100'
 })
+const bigb = document.querySelector('.pj04_in .big_bg');
+const banner_img = document.querySelectorAll('.banner li img');
+const big_imgB = document.querySelector('.pj04_in .big_bg img');
+bigb.style.display = 'none';
+for(let banner of banner_img){
+    banner.addEventListener('click',(e)=>{
+        e.preventDefault()
+        bigb.style.display = 'block'
+        document.body.style.overflow = 'hidden';
+        navi.style.zIndex = '0'
+        ports.disable()
+        big_imgB.src = banner.src
+        bigb.children[0].scrollTo(0,0)
+    })
+}
+bigb.addEventListener('click',()=>{
+    bigb.style.display = 'none'
+    document.body.style.overflow = '';
+    ports.enable()
+    navi.style.zIndex = '100'
+})
