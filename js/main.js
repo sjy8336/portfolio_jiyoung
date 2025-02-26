@@ -45,6 +45,22 @@ bigD.addEventListener('click',()=>{
     ports.enable()
     navi.style.zIndex = '100'
 })
+function PlayRollingSwiper(target){
+    rollingSwiper = new Swiper('.snsS', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 12000,
+    autoplay: {
+        delay: 1,
+    },
+    loop: true,
+    slidesPerView: 'auto'
+    });
+}
+window.addEventListener('load', function(){
+    PlayRollingSwiper();
+});
+/*  */
 const bigS = document.querySelector('.pj02_in .big_bg');
 const ban_img = document.querySelectorAll('.sns li img');
 const big_imgS = document.querySelector('.pj02_in .big_bg img');

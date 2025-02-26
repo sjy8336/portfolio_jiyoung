@@ -157,19 +157,25 @@ body,html {scroll-behavior: smooth; background-color: #F3F1F5;}
 #project01 .pj01_in .web_s .web>div .web_txt .btn li:nth-child(4) a:hover {background-color: #605C64;}
 #project01 .pj01_in .web_s .swiper-button-prev {color: #7F7C82; transform: scale(.7);}
 #project01 .pj01_in .web_s .swiper-button-next {color: #7F7C82; transform: scale(.7);}
-#project02 .pj02_in {width: 1600px; margin: 0 auto; height: 100%;}
-#project02 .pj02_in h2 {
+#project02 .pj02_in .pj02_tit {width: 1600px; margin: 0 auto; height: 100%;}
+#project02 .pj02_in .pj02_tit h2 {
     font-family: "Noto Serif KR", serif;
     font-size: 4.00rem;
     font-weight: 600;
     color: #7F7C82;
     padding-top: 60px;
 }
-#project02 .pj02_in .sns {width: 100%; display: flex; margin-top: 175px; justify-content: space-between;}
-#project02 .pj02_in .sns li {cursor: pointer;}
-#project02 .pj02_in .sns li {width: 380px; height: 380px; background-color: #ddd;}
-#project02 .pj02_in .sns li img {width: 100%; height: auto;}
-#project02 .pj02_in .big_bg {
+#project02 .snsS {width: 100%; margin: 175px 0 0;}
+#project02 .snsS .sns {
+    transition-timing-function: linear;
+    column-gap: 20px;
+}
+#project02 .sns li {
+    width: 480px; height: 480px;
+    cursor: pointer;
+}
+#project02 .sns li img {width: 100%; height: auto;}
+#project02 .big_bg {
     position:fixed; left:0; top:0; z-index: 999;
     width:100%; height:100vh;
     background: rgba(0,0,0,0.6);
