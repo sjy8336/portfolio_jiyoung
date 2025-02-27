@@ -1,2 +1,2 @@
 # portfolio_jiyoung
-2024 웹 포트폴리오
+2025 웹 포트폴리오
